@@ -10,21 +10,27 @@
         a { color: #00ffff; text-decoration: none; font-size: 1.2em; padding: 10px 20px; border: 2px solid #00ffff; border-radius: 10px; transition: all 0.3s; }
         a:hover { background: #00ffff; color: black; box-shadow: 0 0 20px #00ffff; }
         .instructions { max-width: 600px; margin: 20px auto; text-align: left; }
+        pre { background: rgba(0,0,0,0.5); padding: 10px; border-radius: 5px; overflow-x: auto; text-align: left; }
     </style>
 </head>
 <body>
     <h1>AniPFP: Spin Your PFP Like a Nitro God</h1>
-    <p>Animated avatars + rainbow border glow. Modded clients (Revenge/Vendetta) see the full drip. Vanilla? Static envy.</p>
-    <a href="index.js">Load Plugin in Revenge (Direct JS) 🚀</a>
+    <p>Animated avatars + rainbow border glow. Modded clients see the drip. Vanilla? Static envy.</p>
+    <a href="data:text/javascript;base64,">Load Plugin in Revenge (Direct Embedded JS) 🚀</a>
     <div class="instructions">
         <h2>Quick Flex Guide:</h2>
         <ol>
             <li>Upload a GIF PFP on desktop/web named <code>a_swagspin.gif</code> (the 'a_' triggers animation).</li>
-            <li>Revenge > Settings > Developer > Load from URL → Paste this page's JS link.</li>
+            <li>Revenge > Settings > Developer > Load from URL → Paste: https://realNasser9229.github.io/AniPFP/index.js</li>
             <li>Restart Discord → Join a server → Watch your PFP rotate with cyan aura.</li>
         </ol>
-        <p>Source: <a href="https://github.com/realNasser9229/AniPFP">GitHub Repo</a> | Repo Hub: <a href="https://github.com/realNasser9229/Plugins-for-Revenge-etc.">More Plugins</a></p>
+        <p>Source: <a href="https://github.com/realNasser9229/AniPFP">GitHub Repo</a></p>
     </div>
-    <script>console.log('AniPFP Landing Loaded: Time to spin 😈');</script>
+    <script>
+        // Embedded JS for direct load (base64 encoded plugin code)
+        const pluginJS = atob('LyogQW5pUEZQIHYzLjAgLSBPZmZpY2lhbCBSZXZlbmdlIFBsdWdpbiAoTWFuaWZlc3QgQXV0by1IYW5kbGVkLCBQdXJlIFNwaW4gQXVyYSkqLwppbXBvcnQgeyBkZWZpbmVQbHVnaW4sIGZpbmRCeVByb3BzIH0gZnJvbSAnQHJldmVuZ2UvYXBpJzsgLy8gT2ZmaWNpYWwgQVBJIGltcG9ydAppbXBvcnQgeyBhZnRlciB9IGZyb20gJ0ByZXZlbmdlL3BhdGNoZXInOyAvLyBGb3Igc2FmZSBwYXRjaGVzCgpjb25zdCBVc2VyU3RvcmUgPSBmaW5kQnlQcm9wcygnZ2V0Q3VycmVudFVzZXInKTsKcmV0dXJuIGRlZmluZVBybHVnaW4oewogaWQ6ICdhbmlwZnAnLAogbmFtZTogJ0FuaVBGUFAnLAogZGVzY3JpcHRpb246ICdBbmltYXRlZCBwcm9maWxlIHBpY3R1cmVzICsgcmFpbmJvdyBzcGlubmluZyBib3JkZXIgd2l0aG91dCBuaXRyby4gTW9kcyBzZWUgdGhlIGZ1bGwgZHJpcCDigLwnLAogdmVyc2lvbjogJzMuMC4wJywKICBhdXRob3I6ICdyZWFsTmFzc2VyOTIyOScsCiAgc3RhcnQoKSB7CiAgICAvLyBGb3JjZSAnYV8nIHByZWZpeCBmb3IgYW5pbWF0ZWQgUEZQLiAoUnVucywgb24gbG9hZCkKICAgIGNvbnN0IGZvcmNlQW5pbSA9ICgpID=>CiAgICAgIGNvbnN0IG1lID0gVXNlclN0b3JlLmdldEN1cnJlbnRVc2VyKCk7CiAgICAgIGlmIChtZS8uYXZhdGFyICYmICFtZS5hdmF0YXIuc3RhcnRzd2l0aCgnYV8nKSkgewogICAgICAgIG1lLmF2YXRhciA9ICdhXycgKyBtZS5hdmF0YXI7CiAgICAgIH0KICAgIH07CiAgICBmb3JjZUFuaW0oKTsKICAgIHNldEludGVydmFsKGZvcmNlQW5pbSwgMTAwMDApOyAvLyBSZWZyZXNoIGZvciBwcm9maWxlIGNoYW5nZXMKCiAgICAvLyBSYWluYm93IHNwaW4gKyBnbG93IENTUyBpbmplY3Rpb24KICAgIGNvbnN0IGNzcyA9IGAKICAgIGBrZXlmcmFtZXMgcmFpbmJvd1NwaW4gewogICAgICAwJSAgICB7IGJvcmRlci1jb2xvcjogI2ZmMDA0ZDsgdHJhbnNmb3JtOiByb3RhdGUoMGRlZyk7IH0KICAgICAgMTYlICAgeyBib3JkZXItY29sb3I6ICNmZjc3MDA7IH0KICAgICAgMzMlICAgeyBib3JkZXItY29sb3I6ICNmZmZmZjAwOyB9CiAgICAgIDUwJSAgeyBib3JkZXItY29sb3I6ICMwMGZmMDAwOyB9CiAgICAgIDY2JSAgeyBib3JkZXItY29sb3I6ICMwMDk5ZmY7IH0KICAgICAgODMlICAgeyBib3JkZXItY29sb3I6ICM5OTAwZmY7IH0KICAgICAgMTAwJSB7IGJvcmRlci1jb2xvcjogI2ZmMDA0ZDsgdHJhbnNmb3JtOiByb3RhdGUoMzYwZGVnKTsgfQp9CiAgICBpbWdzc3JjKj0iYXZhdGFycy8iXSwgLmF2YXRhckhpbnQtKiwgLmF2YXRhci1bKiB7CiAgICAgIGJvcmRlcjogNHB4IHNvbGlkICFpbXBvcnRhbnQ7CiAgICAgIGJvcmRlci1yYWRpdXM6IDUwJSAhaW1wb3J0YW50OwogICAgICBhbmltYXRpb246IHJhaW5ib3dTcGluIDNzIGxpbmVhciBpbmZpbml0ZSAhaW1wb3J0YW50OwogICAgICBib3gtc2hhZG93OiAwIDAgMThweCAjMDBmZmZmICFpbXBvcnRhbnQ7CiAgICB9CiAgICBpbWdzc3JjKj0iYXZhdGFycy8iXTpob3ZlciB7IGJveC1zaGFkb3c6IDAgMCAzNXB4ICMwMGZmZmYgIWltcG9ydGFudDsgfQpAbGA7CiAgICBjb25zdCBzdHlsZSA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ3N0eWxlJyk7CiAgICBzdHlsZS5pZCA9ICdhbmlwZnAtcmFpbmJvdyc7CiAgICBzdHlsZS50ZXh0Q29udGVudCA9IGNzczsKICAgIGRvY3VtZW50LmhlYWQuYXBwZW5kQ2hpbGQoUnN0eWxlKTsKCiAgICAvLyBQYXRjaCBhdmF0YXIgcmVuZGVycyBmb3IgR0lGIGZvcmNlIChvZmZpY2lhbCBhZnRlciBob29rKQogICAgYWZ0ZXIoJ2RlZmF1bHQnLCBmaW5kQnlQcm9wcygnQXZhdGFyJyksICgqLCosIHJldCkgPT4gewogICAgICBpZiAocmV0Py5wcm9wcz8uc3JjPy5pbmNsdWRlcygnYV8nKSAmJiAhcmV0LnByb3BzLnNyYy5pbmNsdWRlcygnLmdpZicpKSB7CiAgICAgICAgcmV0LnByb3BzLnNyYyA9IHJldC5wcm9wcy5zcmMuc3BsaXQoJz8nKVswXSArICc/c2l6ZT01MTIuZ2lmJzsKICAgICAgICByZXQucHJvcHMuYW5pbWF0ZWQgPSB0cnVlOwogICAgICB9CiAgICB9KTsKCiAgICAvLyBET00gb2JzZXJ2ZXIgZm9yIGR5bmFtaWMgYXZhdGFycwogICAgY29uc3QgcGF0Y2hBdmF0YXJzID0gKCkgPT4gewogICAgICBkb2N1bWVudC5xdWVyeVNlbGVjdG9yQWxsKCdpbWdzc3JjKj0iYXZhdGFycy8iJykuaW9yRmV0Y2goaW1nID=>CiAgICAgICAgaWYgKGlpbWcuc3JjLmluY2x1ZGVzKCdhXycpICYmICFpbWcuc3JjLmluY2x1ZGVzKCcuZ2lmJykpIHsKICAgICAgICAgIGltZy5zcmMgPSBpbWcuc3JjLnNwbGl0KCc/JylbMF0gKyAnP3NpemU9NTEyI2cuZ2lmJzsKICAgICAgICB9CiAgICAgIH0pOwogICAgICB9KTsKICAgIH0sCiAgICBzdG9wKCkgewogICAgICAvLyBDbGVhbnVwIGZvciB0b2dnbGVzCiAgICAgIGNvbnN0IHN0eWxlID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2FuaXBmcC1yYWluYm93Jyk7CiAgICAgIGlmIChzdHlsZSkgc3R5bGUucmVtb3ZlKCk7CiAgICAgIGNvbnNvbGUubG9nKCclY0FuaVBGUCBTdG9wcGVkIC0gQXVyYSBwYXVzZWQg8J+YqSIsICdjb2xvcjojZmYwMDRkJyk7CiAgICB9Cn07');
+        document.currentScript.src = 'data:text/javascript;base64,' + btoa(pluginJS);  // Load embedded JS for direct injection
+        console.log('AniPFP Landing Loaded: Time to spin 😈');
+    </script>
 </body>
 </html>
