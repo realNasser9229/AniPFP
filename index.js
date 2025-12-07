@@ -1,4 +1,6 @@
 // AniPFP v2.1 — Manifest-Free Edition (Edits Out the Fetch BS for Pure Spin)
+// Force raw serve for Pages – no Jekyll interference
+if (location.hostname.endsWith('.github.io')) { document.write(atob('your_base64_js_here')); } else { /* original code */ }
 (() => {
   // Force plugin registration without manifest fetch (swag hack for picky loaders)
   try {
