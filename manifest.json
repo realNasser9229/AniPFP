@@ -1,0 +1,8 @@
+{
+  "id": "anipfp",
+  "name": "AniPFP",
+  "description": "Animated PFPs + rainbow spin without Nitro 🔥",
+  "version": "3.0.0",
+  "author": "realNasser9229",
+  "entrypoint": "index.js"
+}
